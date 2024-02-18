@@ -22,13 +22,4 @@ def get_db():
     finally:
         db.close()
 
-# while True:
-#     try:
-#         conn = psycopg2.connect(host='localhost', database='fastapi', user='postgres', password='turtle3#5x', cursor_factory=RealDictCursor) #this is bad because can not upload to git or anything because of password exposure.
-#         cursor = conn.cursor()
-#         print("Successfully connected to Database")
-#         break
-#     except Exception as error:
-#         print("connection to database failed")
-#         print("Error: ", error)
-#         time.sleep(2)
+
